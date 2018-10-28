@@ -1,12 +1,16 @@
+#libraries to import
 import time
 import pandas as pd
 import numpy as np
 
+#initial variables
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 months = ['january', 'february', 'march', 'april', 'may', 'june']
 days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
+###### USER INPUT ########
 
 def get_filters():
     """
@@ -38,6 +42,8 @@ def get_filters():
 
     print('-'*40)
     return city, month, day
+
+###### DATA ########
 
 def load_data(city, month, day):
     """
@@ -95,6 +101,8 @@ def show_data(df):
               further = input('Please state whether you would like to see raw data. Type yes or no: ').lower()
     else:
         print('\nLet\'s then go to the stats!\n')
+
+###### STATISTICS ########
 
 def time_stats(df,month,day):
     """Displays statistics on the most frequent times of travel."""
@@ -194,6 +202,9 @@ def user_stats(df,city):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+
+###### MAIN ########
 
 def main():
     print('Hello! Let\'s explore some US bikeshare data!')
