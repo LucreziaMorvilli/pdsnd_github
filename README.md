@@ -1,12 +1,19 @@
 ### Date created
-* The **project** was written on 21/10/2018. 
+* The **project** was written on 21/10/2018.
 * This **README** file was written on 28/10/2018.
 
-### BikeShare in US
-Replace the Project Title
+### US Bikeshare
+This is an interactive project written in Python that allows the user to get some insights and stats on the bike share systems in Chicago, New York City, and Washington.
 
 ### Description
-This is an interactive project that allows the user to get some insights and stats on the bikeshare
+This is an interactive project
+
+### Requirements
+To run this program you need:
+* Python 3
+* Numpy and Pandas libraries (installed using Anaconda)
+* Terminal application
+* Text editor (I used *Atom*)
 
 ### Files used
 The three csv files provided for the projects, namely:
